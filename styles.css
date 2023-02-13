@@ -1,0 +1,291 @@
+/*----------------- GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 100%;
+}
+/* body{
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column; 
+} */
+
+p{
+    font-size: 1rem;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover, a:hover{
+    color: rgb(178, 169, 169);
+}
+
+li{
+    list-style: none;
+    color: white;
+}
+
+section{
+    margin-left:  10rem
+    ;
+    margin-right: 10rem;
+    /* border: solid 1px red; */
+   
+
+}
+
+section h1, section h2{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+section p {
+    color: black;
+    font-weight: 400;
+}
+
+
+/* ---------------NAVBAR----------- */
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+.customNavBar{
+    background-color: #252C41;;
+}
+
+.contact-button{
+    background-color: #F63E00;
+    border-radius: 5px;
+    border: none;
+    max-width: 100%;
+    width: 12rem;
+    height: 3rem;
+    color: white;
+
+    
+}
+
+
+/* -----------------IMAGEN PRINCIPAL PORTADA */
+ .img-container{
+    width: 100%;
+    height: auto;
+ }
+
+ 
+
+ .bloque-azul{
+    width: 60vw;
+    background-color: #4987C5;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 25px;
+    top: -3rem;
+    border: solid 1px rgb(181, 181, 222);
+    box-shadow: 0rem 0.5rem 1rem  rgb(196, 196, 196);
+   
+ }
+
+ .bloque-azul p {
+    text-align: center;
+    font-weight: 700;
+    
+    padding: 0.5rem 0 0 0  ;
+    
+
+ }
+.item-container{
+    
+    height: auto;
+    margin-top: -0.5rem;
+    margin-left: -1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+.text-itemContainer{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+}
+    
+   
+ 
+
+ 
+.material-symbols-outlined {
+  
+  color: rgb(255, 255, 255);
+ font-size: 2rem;
+}
+
+
+
+
+
+
+
+/* CARDS  */
+
+
+
+.card{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-body{
+    background-color:#252C41;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-body p{
+    color: white;
+    font-weight: 400;
+}
+
+.card-body h5{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+p.card-text{
+    padding: 0.5rem 0 1.5rem 0;
+}
+
+
+
+/* SOBRE NOSOTROS */
+
+.card-sobreNosotros{
+    background-color: #31394F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-sobreNosotros p{
+    font-weight: 700;
+    line-height: 2.5rem;
+    color: white;
+    font-style: italic;
+
+    
+}
+
+.card-sobreNosotros2{
+    background-color: #4987C5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-sobreNosotros2 > img:first-child{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: 0.5rem;
+    width: 30%;
+}
+
+.card-sobreNosotros2 p, h5{
+    color: white;
+}
+
+
+.linkIn-icon{
+    width: 32px;
+}
+
+.card-miembros{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-miembros img{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: 0.5rem;
+}
+
+.card-miembros h5, .card-miembros p{
+    color:  #252C41
+}
+
+
+
+
+
+/* FORMULARIO */
+.formulario-contenedor{    
+   width: 100%;
+    background-color: #31394F;
+}
+
+.formulario-contenedor p{
+    font-weight: 400;
+}
+
+.formulario-contenedor h2 {
+    color: white;
+    font-weight: 700;
+}
+
+label{
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
+/* FOOTER */
+
+.footer{
+    background-color: #252C41;
+    width: 100%;
+    height: 30vh;
+}
+
+.newsletterButton{
+    background-color: #F63E00;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    width: 4rem;
+    height: 2rem;
+    color: white;
+    
+}
+
+.newsletterInput{
+    height: 2rem;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    border: none;
+}
