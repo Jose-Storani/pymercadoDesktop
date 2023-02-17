@@ -278,6 +278,10 @@ label{
     color: white;
 }
 
+form select{
+    height: 2rem;
+}
+
 
 
 
