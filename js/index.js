@@ -5,5 +5,7 @@ opcionOtro.addEventListener("click",() => {
     opcionOtro.innerText = "CAMBIADO"
 })
 
-
-console.log("HOLA JS ANDA NO TE PREOCUPES")
+let buttonPrueba = document.getElementById("buttonPrueba");
+buttonPrueba.addEventListener("click", () => {
+    alert("el boton funciona")
+})
