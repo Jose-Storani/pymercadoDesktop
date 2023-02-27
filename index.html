@@ -37,19 +37,26 @@
     <div id="home"></div>
     <div class="container-fluid sticky-top customNavBar py-2">
         <div class="row d-flex justify-content-center">
-            <div class="col-sm-2 col-md-3 col-lg-4 d-flex align-items-center">
-                <a class="ms-5" href="#home">
+            <div class="col-2 col-md-3 col-lg-4 d-flex align-items-center">
+                <a class="ms-md-5" href="#home">
                     <span style="color: orangered">PYME</span><span style="color: rgb(255, 255, 255)">RCADOS</span>
                 </a>
             </div>
 
-            <div class="col-8">
-                <nav class="navbar navbar-expand-sm ms-md-5">
-                    <div class="container-fluid">
-                        <div class="w-100">
-                            <ul class="navbar-nav">
+            <div class="col-10 col-sm-8">
+                <nav class="navbar navbar-expand-sm ms-sm-5">
+                    <div class="container-fluid d-flex justify-content-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+                            </span>
+                          </button>
+
+
+                        <div class="w-100 collapse navbar-collapse" id="navbarNav" >
+                            <ul class="navbar-nav w-100">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#home">Home</a>
+                                    <a class="nav-link" aria-current="page" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#categorias">Categorias</a>
@@ -72,7 +79,7 @@
 
     <!----------SECCION IMAGENES Y BLOCK INFORMATIVO--------->
 
-    <div class="container-fluid g-0 img-container">
+    <div class="container-fluid g-0 img-container mb-5 mb-md-0">
         <div class="row g-0">
             <img class="w-100"
                 src="https://res.cloudinary.com/josestorani/image/upload/v1676230813/Pymercados/Banner_principal_recortado_tjes61.png"
@@ -80,7 +87,7 @@
 
         </div>
     </div>
-    <div class=" container-fluid bloque-azul  ">
+    <div class=" container-fluid bloque-azul d-none d-md-block  ">
         <div class="row g-0">
             <div class="col-12">
                 <p>Tu tienda online exclusiva de Vaca Muerta</p>
@@ -128,26 +135,15 @@
                         Tienda Online
                     </span>
                 </div>
-
-
-
-
-
-
-
-
             </div>
-        </div>
-
-        <!--  -->
-
+        </div>       
     </div>
 
 
 
     <!-- SECCION INFORMACION QUE ES PYMERCADOS -->
 
-    <section class="section1">
+    <section class="section1 marginMobile">
         <h1>¿Qué es Pymercados?</h1>
         <p class="mt-5">Una tienda online que conecta a fábricas y empresas de servicios dedicadas a la industria del
             petróleo, la minería y la energía</p>
@@ -164,10 +160,10 @@
     </section>
 
 
-
+<section>
     <div class="container">
         <div class="row justify-content-center pt-5">
-            <div class="col-8">
+            <div class="col-12 col-xl-10">
                 <img class="w-100"
                     src="https://res.cloudinary.com/josestorani/image/upload/v1676593159/Pymercados/mockup_final_desktop_1_yuvmke.png"
                     alt="mockupImg" />
@@ -175,14 +171,19 @@
             </div>
         </div>
     </div>
+</section>
+   
 
-    <section class="mt-5">
+
+
+
+    <section class="mt-5 d-none d-sm-block">
         <h2>
             ¿Qué puedo hacer?
         </h2>
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-4 d-flex justify-content-center">
+            <div class="row d-flex justify-content-center row-gap-sm-4">
+                <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 d-flex justify-content-center">
                     <div class="card w-100">
                         <img src="https://res.cloudinary.com/josestorani/image/upload/v1676239696/Pymercados/image_10_w9ke9t.png"
                             class="card-img-top w-100 " style="height: 15rem" alt="productos">
@@ -194,8 +195,8 @@
                     </div>
 
                 </div>
-                <div class="col-md-4 d-flex justify-content-center ">
-                    <div class="card w-100" style="width: 18rem;"">
+                <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 d-flex justify-content-center ">
+                    <div class="card w-100" style="width: 18rem;">
                         <img src="
                         https://res.cloudinary.com/josestorani/image/upload/v1676239703/Pymercados/image_11_dfmlm2.png"
                         class="card-img-top" style="height: 15rem" alt="productos">
@@ -207,7 +208,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-4 d-flex justify-content-center">
+                <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 d-flex justify-content-center">
                     <div class="card w-100" style="width: 18rem;">
                         <img src="https://res.cloudinary.com/josestorani/image/upload/v1676239671/Pymercados/image_9_xvcpjd.png"
                             class="card-img-top" style="height: 15rem" alt="productos">
@@ -217,7 +218,6 @@
                                 encontrar desde maquinarias hasta herramientas de trabajo, todo en un mismo lugar.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -229,13 +229,14 @@
 
 
 
-    <!----------------------SECCION 2  --------------->
-    <section id="categorias" class="mt-5">
-        <h2 class="mt-5">Categorías</h2>
-        <div class="container mt-5">
-            <div class="row mb-4 g-0 px-5">
-                <div class="col-md-4 d-flex justify-content-end">
-                    <div class="card" style="width: 18rem;">
+    <!----------------------SECCION 2 CATEGORIAS  --------------->
+    <section id="categorias" class="mt-5 " style="border:solid red 2px">
+        <h2 class="mt-5 marginMobile">Categorías</h2>
+        <div class="container-fluid mt-5" style="border: solid 2px green;">
+            <div class="row row-gap-4" style="border:solid 2px purple">
+                <div class="col-6 col-xl-4 d-flex justify-content-end justify-content-md-center"
+                    style="border:solid blue 1px">
+                    <div class="card" >
                         <img src="https://res.cloudinary.com/josestorani/image/upload/v1676255141/Pymercados/F%C3%A1bricas_1_es3ypl.jpg"
                             class="card-img-top" style="height: 15rem" alt="productos">
                         <div class="card-body text-start"">
@@ -243,22 +244,23 @@
                             <p class="card-text">Fabricantes de todo el país</p>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md-4 d-flex justify-content-center ">
-                    <div class="card" style="width: 18rem;"">
+
+                <div class="col-6 col-xl-4 d-flex justify-content-center justify-content-md-center justify-content-sm-start">
+                    <div class="card">
                         <img src="
                         https://res.cloudinary.com/josestorani/image/upload/v1676254972/Pymercados/equipos_petroleros_1_ygkndj.png"
-                        class="card-img-top" style="height: 15rem" alt="productos">
+                            class="card-img-top" style="height: 15rem" alt="productos">
                         <div class="card-body text-start">
                             <h5 class="card-title">Equipos petroleros</h5>
                             <p class="card-text">Venta y renta</p>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md-4 d-flex justify-content-start">
-                    <div class="card" style="width: 18rem;">
+
+
+                <div class="col-6 col-xl-4  d-flex justify-content-xl-start justify-content-md-evenly justify-content-sm-end">
+                    <div class="card">
                         <img src="https://res.cloudinary.com/josestorani/image/upload/v1676254977/Pymercados/Ingenier%C3%ADa_y_Construcci%C3%B3n_1_oinxns.jpg"
                             class="card-img-top" style="height: 15rem" alt="productos">
                         <div class="card-body text-start"">
@@ -268,11 +270,12 @@
                     </div>
 
                 </div>
-            </div>
 
-            <div class="row g-0 px-5">
-                <div class="col-md-4 d-flex justify-content-end">
-                    <div class="card" style="width: 18rem;">
+
+
+                
+                <div class="col-6 col-xl-4  d-flex justify-content-end justify-content-md-evenly justify-content-sm-start">
+                    <div class="card">
                         <img src="https://res.cloudinary.com/josestorani/image/upload/v1676254973/Pymercados/herramientas_1_pkvkwt.png"
                             class="card-img-top" style="height: 15rem" alt="productos">
                         <div class="card-body text-start"">
@@ -282,8 +285,8 @@
                     </div>
 
                 </div>
-                <div class="col-md-4 d-flex justify-content-center ">
-                    <div class="card" style="width: 18rem;"">
+                <div class="col-6 col-xl-4  d-flex justify-content-center justify-content-md-evenly justify-content-sm-end ">
+                    <div class="card">
                         <img src="
                         https://res.cloudinary.com/josestorani/image/upload/v1676254974/Pymercados/inmuebles_a3wkug.png"
                         class="card-img-top" style="height: 15rem" alt="productos">
@@ -294,8 +297,8 @@
                     </div>
 
                 </div>
-                <div class="col-md-4 d-flex justify-content-start">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-6 col-xl-4  d-flex justify-content-start justify-content-md-evenly">
+                    <div class="card">
                         <img src="https://res.cloudinary.com/josestorani/image/upload/v1676571967/Pymercados/Seguridad_industrial_eyymxv.png"
                             class="card-img-top" style="height: 15rem" alt="productos">
                         <div class="card-body text-start"">
@@ -306,6 +309,7 @@
 
                 </div>
             </div>
+            <!-- </div> -->
         </div>
     </section>
 
@@ -322,7 +326,7 @@
     <!-------------------------SECCION 3 EMPRESAS QUE TRABAJAN CON PYMERCADOS  -->
 
     <section class="mt-5 py-5">
-        <h2 class="">Conocé las empresas que confían en Pymercados.com</h2>
+        <h2 class="marginMobile">Conocé las empresas que confían en Pymercados.com</h2>
         <div class="mt-5">
             <div class="container-fluid g-0 img-container">
                 <div class="row g-0 d-flex justify-content-center">
@@ -343,9 +347,32 @@
 
     <!-------------------------------SOBRE NOSOTROS  -->
 
-    <section class="mt-5 " id="nosotros">
-        <h2 class="">Sobre nosotros</h2>
-        <div class="container-fluid mt-5">
+    <section class="mt-5 " id="nosotros" style="border:solid blue 2px">
+        <h2 class="marginMobile">Sobre nosotros</h2>
+        <div  class="container-fluid d-block d-sm-none mt-5 g-0 ">
+            <div class="row marginMobile g-0">
+                <p>Aspiramos a conectar a toda la cadena industrial de Argentina para potenciarla y ayudarla a ser más competitiva reduciendo intermediarios y bajando costos.</p>
+            </div>
+        <div class="row g-0 nosotrosMobile">
+            <div class="col-4 d-flex justify-content-center align-items-center ">
+                <img src="https://res.cloudinary.com/josestorani/image/upload/v1676296245/Pymercados/Matias_Larroulet_-_fondo_blanco2_yprhhb.png"
+                        class="rounded-circle w-75" alt="Matias Larroulet">
+            </div>
+            <div class="col-6 ms-5  d-flex flex-column justify-content-center align-items-start">
+                <h5>
+                    Matías Larroulet
+                </h5>
+                <p style="color:white">CEO & FOUNDER</p>
+                <a href="https://www.linkedin.com/in/matias-larroulet-93a0481a/" target="_blank"> <i
+                        class="fa-brands fa-linkedin fa-2xl"></i></a>
+            </div>
+        </div>
+            
+        <div>
+
+        </div>
+        </div>
+        <div class="container-fluid mt-5 d-none d-sm-block">
             <div class="row" style="height: 15rem;">
                 <div class="col-8 card-sobreNosotros">
                     <p class="mx-5">"Aspiramos a conectar a toda la cadena industrial de Argentina para potenciarla y
@@ -369,9 +396,9 @@
             </div>
         </div>
 
-        <div class="container-fluid mt-5">
-            <div class="row" style="height: 15rem">
-                <div class="col-12 d-flex justify-content-between">
+        <div class="container-fluid mt-5 ">
+            <div class="row d-none d-lg-flex" style="height: 15rem; border:solid 2px blue">
+                <div class="col-lg-12  d-flex justify-content-between" style="border:solid 2px red">
                     <div class="card-miembros">
                         <img src="https://res.cloudinary.com/josestorani/image/upload/v1676597952/Pymercados/FOTO_i0vzba.png"
                             class="rounded-circle imgDavid" alt="David Sueldo">
@@ -438,10 +465,84 @@
                                 class="fa-brands fa-linkedin fa-2xl"></i></a>
                     </div>
 
-
-
                 </div>
             </div>
+
+            <div class="row d-xl-none d-none d-sm-flex g-0 d-flex justify-content-center" style="border:solid green 2px">
+                <div class="col-4" style="border:solid 2px red">
+                    <div class="card-miembros">
+                        <img src="https://res.cloudinary.com/josestorani/image/upload/v1676597952/Pymercados/FOTO_i0vzba.png"
+                            class="rounded-circle imgDavid" alt="David Sueldo">
+
+
+
+                        <h5>
+                            David Sueldo
+                        </h5>
+                        <p>Diseño UX UI</p>
+                        <a href="https://www.linkedin.com/in/davidezequielsueldo/" target="_blank"> <i
+                                class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div>
+                </div>
+                <div class="col-4" style="border:solid 2px red">
+                    <div class="card-miembros">
+                        <img src="https://res.cloudinary.com/josestorani/image/upload/v1676597238/Pymercados/JosefinaMod_yzhqbg.png"
+                            class="w-50 rounded-circle" alt="Josefina Fagundez">
+
+
+
+                        <h5>
+                            Josefina Fagúndez
+                        </h5>
+                        <p>Diseño UX UI</p>
+                        <a href="https://www.linkedin.com/in/josefina-fagundez/" target="_blank"> <i
+                                class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div>
+                </div>
+                <div class="col-4" style="border:solid 2px red">
+                    <div class="card-miembros">
+                        <img src="https://res.cloudinary.com/josestorani/image/upload/v1676597324/Pymercados/facu_knamni.jpg"
+                            class="w-50 rounded-circle" alt="Facundo Rodriguez">
+                        <h5>
+                            Facundo Rodriguez
+                        </h5>
+                        <p>Desarrollo Web</p>
+                        <a href="https://www.linkedin.com/in/facundo-rodriguez-13a497227/" target="_blank"> <i
+                                class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-lg-none d-none d-sm-flex g-0 d-flex justify-content-center" style="border:solid green 2px">
+                <div class="col-4" style="border:solid 2px red">
+
+                    <div class="card-miembros">
+                        <img src="https://pymercados-mobile.netlify.app/static/media/jose.ca493936428bd1c59b72.png"
+                            class="w-50 rounded-circle" alt="Jose Storani">
+
+                        <h5>
+                            José Storani
+                        </h5>
+                        <p>Desarrollo Web</p>
+                        <a href="https://www.linkedin.com/in/jose-storani/" target="_blank"> <i
+                                class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-miembros">
+                        <img src="https://pymercados-mobile.netlify.app/static/media/caro.fc89d3911a77b50b3acf.png"
+                            class="w-50 rounded-circle" alt="Carolina Nogueira">
+                        <h5>
+                            Carolina Nogueira
+                        </h5>
+                        <p>Marketing</p>
+                        <a href="https://www.linkedin.com/in/carolinabelennogueira/" target="_blank"> <i
+                                class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
     </section>
 
@@ -451,7 +552,7 @@
 
     <!-----------------COMPRE NEUQUINO  -------->
 
-    <section class="compreNeuquino">
+    <section class="compreNeuquino" style="border:solid 2px red">
         <div>
             <h2 class="mt-5">
                 Compre Neuquino: Encontrá empresas locales
@@ -479,7 +580,7 @@
     <!---------------------FORMULARIO DE CONTACTO  ----------->
     <div class="container-fluid mt-5 py-3 formulario-contenedor" id="contacto">
         <div class="row d-flex justify-content-center">
-            <div class="col-4">
+            <div class="col-xl-4 col-sm-6">
                 <div class="mt-5">
                     <h2>Contacto</h2>
                     <p class="mt-5">Si sos fabricante y querés que tus productos aparezcan en PYMERCADOS escribinos a
@@ -496,29 +597,30 @@
                     <label for="name">Nombre y Apellido</label><br>
                     <input class="w-100 mt-2 ps-2" type="text" id="name" name="name" required><br>
 
-                    <label class="mt-3" for="email" >Email</label><br>
+                    <label class="mt-3" for="email">Email</label><br>
                     <input class="w-100 mt-2 ps-2" type="email" id="email" name="email" required><br>
                     <label class="mt-3" for="motivo">Motivo</label><br>
                     <select class="w-100 mt-3 ps-2" name="motivo" required>
-                        <option disabled value="none" selected >---Elije una opción---</option>
-                        <option value="Agendar una reunion para subscribirme">Agendar una reunion para subscribirme</option>
+                        <option disabled value="none" selected>---Elije una opción---</option>
+                        <option value="Agendar una reunion para subscribirme">Agendar una reunion para subscribirme
+                        </option>
                         <option value="Recibir Newsletter">Recibir Newsletter</option>
                         <option value="Quiero tener mi Fábrica Online">Quiero tener mi Fábrica Online</option>
                         <option value="Otro/s">Otro/s</option>
                     </select>
-                    
-                   
 
-                    <label  class="mt-3" for="message">Descripción</label>
-                        <textarea class="mt-2 ps-2" name="message" style="width:100%; height: 25vh; resize: none;">
+
+
+                    <label class="mt-3" for="message">Descripción</label>
+                    <textarea class="mt-2 ps-2" name="message" style="width:100%; height: 25vh; resize: none;">
                         </textarea>
-                        
-                    
+
+
                     <div class="text-center mt-5">
                         <input class="contact-button" type="submit" value="Enviar">
                     </div>
-                    
-                    
+
+
 
 
                 </form>
@@ -579,7 +681,7 @@
 
 
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
 </body>
 
